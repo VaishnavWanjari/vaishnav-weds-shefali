@@ -1,0 +1,16 @@
+[build]
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/art/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "/photos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "/music.mp3"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
